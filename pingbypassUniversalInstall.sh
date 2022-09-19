@@ -18,6 +18,7 @@ echo $'
                                                  ▖▐      ▞  ▐               
                                                  ▝▘     ▝▘  ▝               
 '
+echo $'Inspired by zYongSheng_'s guide.'
 echo $'Sandstar Pingbypass can be found at http://discord.gg/5HVsNJrVWM'
 sleep 2
 echo $'If you get an error while logging into HeadlessMC, re-run the script.'
