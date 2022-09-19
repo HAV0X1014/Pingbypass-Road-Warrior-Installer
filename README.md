@@ -3,6 +3,8 @@ A script to install and configure 3arthh4ck Pingbypass as quickly as possible on
 
 The only dependency needed is wget, which should already be installed on most distros/VPS images. You will need to be able to communicate on all ports, and have an unfiltered internet connection.
 
+Sandstar Pingbypass can be found at discord.gg/5HVsNJrVWM
+
 ## Usage
 1. Make sure `wget` is installed and usable.
 
