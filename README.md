@@ -1,4 +1,4 @@
-# Pingbypass Installer
+# Pingbypass Road Warrior Installer
 A script to install and configure 3arthh4ck Pingbypass as quickly as possible on any Linux distro. This is largely a "[road warrior](https://www.merriam-webster.com/dictionary/road%20warrior)" style install, suitable for systems like NeverInstall or a loaned VPS as it does not need port forwarding, and makes use of large hacks unsuitable for a typical Pingbypass install.
 
 The only dependency needed is wget, which should already be installed on most distros/VPS images. You will need to be able to communicate on all ports, and have an unfiltered internet connection.
