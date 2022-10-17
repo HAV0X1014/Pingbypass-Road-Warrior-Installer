@@ -1,6 +1,6 @@
 #set some variables
 internalip=$( ip -o route get to 10.0.0.0 | sed -n 's/.*src \([0-9.]\+\).*/\1/p' ) #WHAT THE FUCK
-javadir=~/jdk8u345-b01/bin
+javadir=~/jdk1.8.0_321/bin
 hmcdir=~/HeadlessMC
 modsdir=~/.minecraft/mods
 mcdir=~/.minecraft/versions/1.12.2
@@ -45,8 +45,8 @@ read -p $'Input the password of the Minecraft account you want on the server.\n'
 
 #install java if it hasnt been installed before
 if [ ! -d "$javadir" ]; then
-	wget https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jdk_x64_linux_hotspot_8u345b01.tar.gz
-	tar -xf OpenJDK8U-jdk_x64_linux_hotspot_8u345b01.tar.gz
+	wget https://javadl.oracle.com/webapps/download/GetFile/1.8.0_321-b07/df5ad55fdd604472a86a45a217032c7d/linux-i586/jdk-8u321-linux-x64.tar.gz
+	tar -xf jdk-8u321-linux-x64.tar.gz
 fi
 
 #make config files, directories and input relevant configs if they dont exist
