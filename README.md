@@ -8,7 +8,7 @@ Sandstar Pingbypass can be found at https://discord.gg/5HVsNJrVWM
 ## Usage
 1. Make sure `wget` is installed and usable.
 
-2. Download and move the `pingbypassUniversalInstaller.sh` file to your VPS/VM's home directory (`~`). This script will not work elsewhere.
+2. Download and move the `pingbypassUniversalInstaller.sh` file to your VPS/VM's home directory (`~`). This script will not work elsewhere. Use `wget https://raw.githubusercontent.com/HAV0X1014/Pingbypass-Road-Warrior-Installer/main/pingbypassUniversalInstall.sh` to download the script directly to your VPS.
 
 3. Run `bash pingbypassUniversalInstaller.sh`
 
