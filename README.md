@@ -28,5 +28,9 @@ zYongSheng_ - Making the inital guide to installing Pingbypass on NeverInstall a
 ## Tips
 If you're trying to use this guide on something like [Google Cloud Shell](https://shell.cloud.google.com), you may be limited on the ports you can use. For Cloud Shell VMs, you may be limited to 20, 21, 22, 80, 443, 2375, 2376, 3306, 8080, 9600, and 50051 for your open ports. I found that 2375 worked for my instances. You might also have to try using a VPN to place the Cloud Shell VM near the Minecraft server you want to play on.
 
+- A good cheap VPS host for US servers (in Montreal) is Webdock. My affiliate link -> https://webdock.io/en?maff=wdaff--257
+
+- A good chep VPS host for nearly anywhere else is HostHatch. My affiliate link -> https://cloud.hosthatch.com/a/3718
+
 ## Contributing
 If you are willing to contribute, please note what you changed, what distros you tested on, and keep changes as minimal as possible.
