@@ -30,7 +30,7 @@ If you're trying to use this guide on something like [Google Cloud Shell](https:
 
 - A good cheap VPS host for US servers (in Montreal) is Webdock. My affiliate link -> https://webdock.io/en?maff=wdaff--257
 
-- A good chep VPS host for nearly anywhere else is HostHatch. My affiliate link -> https://cloud.hosthatch.com/a/3718
+- A good cheap VPS host for nearly anywhere else is HostHatch. My affiliate link -> https://cloud.hosthatch.com/a/3718
 
 ## Contributing
 If you are willing to contribute, please note what you changed, what distros you tested on, and keep changes as minimal as possible.
