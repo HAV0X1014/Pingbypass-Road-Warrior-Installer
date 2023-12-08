@@ -8,18 +8,10 @@ playitcheck=~playit-0.9.3
 launch=~launchpb
 
 #print the credits first, every installer ALWAYS has a stupid splash screen
-echo $'brought to you by HAV0X of'
-echo $'                                                                            
- ▄▄           ▐      ▗              ▗▄▄  ▝          ▐                       
-▐▘ ▘ ▄▖ ▗▗▖  ▄▟  ▄▖ ▗▟▄  ▄▖  ▖▄     ▐ ▝▌▗▄  ▗▗▖  ▄▄ ▐▄▖ ▗ ▗ ▗▄▖  ▄▖  ▄▖  ▄▖ 
-▝▙▄ ▝ ▐ ▐▘▐ ▐▘▜ ▐ ▝  ▐  ▝ ▐  ▛ ▘    ▐▄▟▘ ▐  ▐▘▐ ▐▘▜ ▐▘▜ ▝▖▞ ▐▘▜ ▝ ▐ ▐ ▝ ▐ ▝ 
-  ▝▌▗▀▜ ▐ ▐ ▐ ▐  ▀▚  ▐  ▗▀▜  ▌      ▐    ▐  ▐ ▐ ▐ ▐ ▐ ▐  ▙▌ ▐ ▐ ▗▀▜  ▀▚  ▀▚ 
-▝▄▟▘▝▄▜ ▐ ▐ ▝▙█ ▝▄▞  ▝▄ ▝▄▜  ▌      ▐   ▗▟▄ ▐ ▐ ▝▙▜ ▐▙▛  ▜  ▐▙▛ ▝▄▜ ▝▄▞ ▝▄▞ 
-                                                 ▖▐      ▞  ▐               
-                                                 ▝▘     ▝▘  ▝               
-'
-echo $'Inspired by zYongSheng_`s guide.'
-echo $'Sandstar Pingbypass can be found at http://discord.gg/5HVsNJrVWM'
+echo $'brought to you by SoftWaren'
+echo $'Welcome to Pingbyppass Setup'
+echo $'Thanks to HAV0X1014, YongSheng109 and 3arthqu4ke.'
+echo $'To prevent an insane minecraft account error, please go to https://account.live.com/activity and sign in your microsoft account'
 sleep 2
 echo $'If you get an error while logging into HeadlessMC, re-run the script.'
 sleep 1
@@ -71,7 +63,7 @@ fi
 #download mods and hmc and move them to the proper places if not already downloaded
 if [ ! -d "$modsdir" ]; then
 	mkdir ~/.minecraft/mods -p
-	wget https://github.com/3arthqu4ke/3arthh4ck/releases/download/1.8.5/3arthh4ck-1.8.5-release.jar && mv 3arthh4ck-1.8.5-release.jar ~/.minecraft/mods
+	wget https://github.com/3arthh4ckDevelopment/3arthh4ck-Client/releases/download/1.8.8/3arthh4ck-1.8.8-release.jar && mv 3arthh4ck-1.8.8-release.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/HMC-Specifics/releases/download/1.0.3/HMC-Specifics-1.12.2-b2-full.jar && mv HMC-Specifics-1.12.2-b2-full.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/HeadlessForge/releases/download/1.2.0/headlessforge-1.2.0.jar && mv headlessforge-1.2.0.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/HeadlessMc/releases/download/1.5.2/headlessmc-launcher-1.5.2.jar
@@ -87,7 +79,7 @@ fi
 
 #download playit.gg if it hasnt been already
 if [ ! -d "$playitcheck" ]; then
-	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.9.3/playit-0.9.3 && chmod +x playit-0.9.3
+	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64 && chmod +x playit-linux-amd64
 fi
 
 #make launch file for pb server if it hasnt been made already
@@ -103,7 +95,7 @@ echo $"
 
 **DO NOT CLOSE THIS TERMINAL UNLESS YOU ARE SURE YOU WILL NOT NEED IT**
 
-To connect to your server, run './playit-0.9.3'. When the browser opens, click where it says 'create a guest account' and then click 'Add tunnel'. For 'Tunnel Type' choose 'Minecraft Java' then click 'Next'. Set Local IPV4 to '$internalip' and Local Port to '$openport' Click 'Next' and then 'Create Tunnel'. Click the X in the top right of the box, and keep the browser window open.
+To connect to your server, run './playit-linux-amd64'. When the browser opens, click where it says 'create a guest account' and then click 'Add tunnel'. For 'Tunnel Type' choose 'Minecraft Java' then click 'Next'. Set Local IPV4 to '$internalip' and Local Port to '$openport' Click 'Next' and then 'Create Tunnel'. Click the X in the top right of the box, and keep the browser window open.
 
 Now open another terminal, and run HeadlessMC with './launchpb' and use 'launch [id number next to the forge install] -id' to launch the Pingbypass server.
 
