@@ -15,7 +15,7 @@
 ## Usage
 1. Make sure `wget` is installed and usable.
 
-2. Download and move the `pingbypassUniversalInstall.sh` file to your VPS/VM's home directory (`~`). This script will not work elsewhere. Use `wget https://raw.githubusercontent.com/SoftWaren1/Pingbypass-1/main/pingbypassUniversalInstall.sh` to download the script directly to your VPS.
+2. Download and move the `pingbypassUniversalInstall.sh` file to your VPS/VM's home directory (`~`). This script will not work elsewhere. Use `wget https://raw.githubusercontent.com/SoftWaren1/Pingbypass-Manual/main/pingbypassUniversalInstall.sh` to download the script directly to your VPS.
 
 3. Run `bash pingbypassUniversalInstall.sh`
 
