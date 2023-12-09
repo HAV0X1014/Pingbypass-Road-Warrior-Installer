@@ -21,9 +21,9 @@
 
 4. Follow the prompts printed into the console and type your answers to each.
 
-5. If it completes without errors, then run `./playit-0.9.3` in a new terminal session, and follow the prompts given on the playit.gg website. A guide is printed in the console.
+5. If it completes without errors, then run `./playit-linux-amd64` in a new terminal session, and follow the prompts given on the playit.gg website. A guide is printed in the console.
 
-6. Run `./launchpb` in a new terminal session, and use `launch [forge install ID number] -id` to launch the Pingbypass server.
+6. Run `./launchpb` in a new terminal session, and use `launch 1 -id` to launch the Pingbypass server.
 
 7. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
 
