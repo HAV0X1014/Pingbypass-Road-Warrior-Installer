@@ -90,10 +90,6 @@ EOL
 chmod +x launchpb
 fi
 
-./playit-linux-amd64
-./launchpb
-launch 1 -id
-
 #tell user how to use playit.gg and how to launch server
 echo $"
 
