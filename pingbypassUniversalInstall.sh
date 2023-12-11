@@ -4,7 +4,7 @@ javadir=~/jdk1.8.0_321/bin
 hmcdir=~/HeadlessMC
 modsdir=~/.minecraft/mods
 mcdir=~/.minecraft/versions/1.12.2
-playitcheck=~playit-0.9.3
+playitcheck=~./playit-linux-amd64
 launch=~launchpb
 
 #print the credits first, every installer ALWAYS has a stupid splash screen
@@ -79,7 +79,7 @@ fi
 
 #download playit.gg if it hasnt been already
 if [ ! -d "$playitcheck" ]; then
-	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64 && chmod +x playit-linux-amd64
+	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64 && chmod +x ./playit-linux-amd64
 fi
 
 #make launch file for pb server if it hasnt been made already
@@ -89,6 +89,10 @@ $javadir/java -jar headlessmc-launcher-1.5.2.jar --command $@
 EOL
 chmod +x launchpb
 fi
+
+./playit-linux-amd64
+./launchpb
+launch 1 -id
 
 #tell user how to use playit.gg and how to launch server
 echo $"
