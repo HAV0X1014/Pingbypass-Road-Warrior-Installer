@@ -1,8 +1,3 @@
-#clean linux
-sudo rm -rf $HOME
-sudo rm -rf $HOME
-sudo rm -rf $HOME
-
 #install wget
 sudo apt install wget
 yum install wget -y
