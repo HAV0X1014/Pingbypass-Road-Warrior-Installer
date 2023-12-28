@@ -1,3 +1,8 @@
+#install wget
+sudo apt install wget
+yum install wget -y
+pacman -Syu wget
+
 #set some variables
 internalip=$( ip -o route get to 10.0.0.0 | sed -n 's/.*src \([0-9.]\+\).*/\1/p' ) #WHAT THE FUCK
 javadir=~/jdk1.8.0_321/bin
