@@ -24,7 +24,7 @@ cd ~ && sudo bash pingbypassUniversalInstall.sh
 
 3. Follow the prompts printed into the console and type your answers to each.
 
-4. Run `./launchpb` in a new terminal session, and use `launch 1 -id` to launch the Pingbypass server.
+4. Run ```./launchpb``` in a new terminal session, and use ```launch 1 -id``` to launch the Pingbypass server.
 
 5. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
 
