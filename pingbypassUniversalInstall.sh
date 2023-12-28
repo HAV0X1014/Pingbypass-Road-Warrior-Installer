@@ -5,7 +5,7 @@ pacman -Syu wget
 
 #set some variables
 internalip=$( ip -o route get to 10.0.0.0 | sed -n 's/.*src \([0-9.]\+\).*/\1/p' )
-javadir=~/jdk1.8.0_321/bin
+javadir=~/graalvm-jdk-21.0.1+12.1/bin
 hmcdir=~/HeadlessMC
 modsdir=~/.minecraft/mods
 mcdir=~/.minecraft/versions/1.12.2
