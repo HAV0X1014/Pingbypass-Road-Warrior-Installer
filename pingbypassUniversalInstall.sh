@@ -7,42 +7,29 @@ mcdir=~/.minecraft/versions/1.12.2
 playitcheck=~./playit-linux-amd64
 launch=~launchpb
 
-#print the credits first, every installer ALWAYS has a stupid splash screen
+#credits
 echo $'brought to you by SoftWaren'
 echo $'Welcome to Pingbyppass Setup'
 echo $'Thanks to HAV0X1014, YongSheng109 and 3arthqu4ke.'
+
+#tips
 echo $'To prevent an insane minecraft account error, please go to https://account.live.com/activity and sign in your microsoft account'
 sleep 2
 echo $'If you get an error while logging into HeadlessMC, re-run the script.'
 sleep 1
 
-#make sure this is being run in the home dir and not anywhere else
-if [ $PWD != ~ ]; then
-	echo $'**This script MUST be run in the home directory!**\n**This script will NOT work elsewhere!**'
-	exit 0
-fi
-
-#check for wget, and tell the user to install it
-if ! command -v wget &> /dev/null
-then
-	echo $"wget is not installed. Install it with 'sudo apt install wget' if you are on a Debian or Ubuntu based system. If you are on an RPM (red hat) based system, use 'yum install wget -y'. For Arch based systems, use 'pacman -Syu wget'."
-	exit 0
-fi
-
-#ask for user input for ip, port, password, and OS type
+#asking for details
 read -p $'What port would you like to use for Pingbypass? \n' openport
 read -p $'What password would you like the Pingbypass server to use? \n' pass
 read -p $'Input the email of the Minecraft account you want on the server.\n' email
 read -p $'Input the password of the Minecraft account you want on the server.\n' password
 
-#install java if it hasnt been installed before
-if [ ! -d "$javadir" ]; then
+#install java
 	wget https://javadl.oracle.com/webapps/download/GetFile/1.8.0_321-b07/df5ad55fdd604472a86a45a217032c7d/linux-i586/jdk-8u321-linux-x64.tar.gz
 	tar -xf jdk-8u321-linux-x64.tar.gz
 fi
 
-#make config files, directories and input relevant configs if they dont exist
-if [ ! -d "$hmcdir" ]; then
+#make config files, directories and input relevant configs
 	mkdir ~/HeadlessMC -p && touch ~/HeadlessMC/config.properties && cat >> ~/HeadlessMC/config.properties<<EOL 
 hmc.java.versions=$javadir/java
 hmc.invert.jndi.flag=true
