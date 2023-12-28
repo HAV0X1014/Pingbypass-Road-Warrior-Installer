@@ -31,7 +31,7 @@ read -p $'Input the password of the Minecraft account you want on the server.\n'
 
 #install java
 	wget https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-x64_bin.tar.gz
-	tar -xf jdk-8u321-linux-x64.tar.gz
+	tar -xf graalvm-jdk-21_linux-x64_bin.tar.gz
 
 #make config files, directories and input relevant configs
 	mkdir ~/HeadlessMC -p && touch ~/HeadlessMC/config.properties && cat >> ~/HeadlessMC/config.properties<<EOL 
