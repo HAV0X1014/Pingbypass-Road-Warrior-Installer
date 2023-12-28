@@ -4,7 +4,7 @@ yum install wget -y
 pacman -Syu wget
 
 #set some variables
-internalip=$( ip -o route get to 10.0.0.0 | sed -n 's/.*src \([0-9.]\+\).*/\1/p' ) #WHAT THE FUCK
+internalip=$( ip -o route get to 10.0.0.0 | sed -n 's/.*src \([0-9.]\+\).*/\1/p' )
 javadir=~/jdk1.8.0_321/bin
 hmcdir=~/HeadlessMC
 modsdir=~/.minecraft/mods
@@ -58,13 +58,13 @@ EOL
 	wget https://github.com/3arthqu4ke/headlessmc/releases/download/1.8.1/headlessmc-launcher-1.8.1.jar && chmod +x launchpb
 
 #download minecraft and forge
-	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command download 1.12.2
-	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command forge 1.12.2
-	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command login $email $password
+	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command download 1.12.2
+	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command forge 1.12.2
+	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command login $email $password
 
 
 #download playit.gg
-	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64 && chmod +x ./playit-linux-amd64
+	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.10/playit-linux-amd64 && chmod +x ./playit-linux-amd64
 
 #make launch file for pb server
 	touch launchpb && cat >>~/launchpb<<EOL
