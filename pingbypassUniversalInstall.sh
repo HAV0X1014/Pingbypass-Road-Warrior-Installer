@@ -13,7 +13,7 @@ playitcheck=~./playit-linux-amd64
 launch=~launchpb
 
 #credits
-echo $'brought to you by SoftWaren'
+echo $'brought to you by SoftWaren1/_Cr33pyL3mon4de and KillAura7170/OP_KillAura'
 echo $'Welcome to Pingbyppass Setup'
 echo $'Thanks to HAV0X1014, YongSheng109 and 3arthqu4ke.'
 
