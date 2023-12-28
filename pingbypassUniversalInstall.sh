@@ -47,8 +47,7 @@ pb.password=$pass
 EOL
 fi
 
-#download mods and hmc and move them to the proper places if not already downloaded
-if [ ! -d "$modsdir" ]; then
+#download mods and hmc and move them to the proper places
 	mkdir ~/.minecraft/mods -p
 	wget https://github.com/SoftWaren1/Pingbypass-Client/releases/download/2.0.0/3arthh4ck-2.0.0.jar && mv 3arthh4ck-2.0.0.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/hmc-specifics/releases/download/v1.20.4-1.8.1/hmc-specifics-forge-1.20.4-1.8.1.jar && mv hmc-specifics-forge-1.20.4-1.8.1.jar ~/.minecraft/mods
@@ -56,21 +55,18 @@ if [ ! -d "$modsdir" ]; then
 	wget https://github.com/3arthqu4ke/headlessmc/releases/download/1.8.1/headlessmc-launcher-1.8.1.jar
 fi
 
-#download minecraft and forge if not already done and login
-if [ ! -d "$mcdir" ]; then
+#download minecraft and forge
 	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command download 1.12.2
 	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command forge 1.12.2
 fi
 	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command login $email $password
 
 
-#download playit.gg if it hasnt been already
-if [ ! -d "$playitcheck" ]; then
+#download playit.gg
 	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64 && chmod +x ./playit-linux-amd64
 fi
 
-#make launch file for pb server if it hasnt been made already
-if [ ! -d "$launch" ]; then
+#make launch file for pb server
 	touch launchpb && cat >>~/launchpb<<EOL
 $javadir/java -jar headlessmc-launcher-1.5.2.jar --command $@
 EOL
