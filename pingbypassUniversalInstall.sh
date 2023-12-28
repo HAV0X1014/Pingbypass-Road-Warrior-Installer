@@ -32,7 +32,6 @@ read -p $'Input the password of the Minecraft account you want on the server.\n'
 #install java
 	wget https://javadl.oracle.com/webapps/download/GetFile/1.8.0_321-b07/df5ad55fdd604472a86a45a217032c7d/linux-i586/jdk-8u321-linux-x64.tar.gz
 	tar -xf jdk-8u321-linux-x64.tar.gz
-fi
 
 #make config files, directories and input relevant configs
 	mkdir ~/HeadlessMC -p && touch ~/HeadlessMC/config.properties && cat >> ~/HeadlessMC/config.properties<<EOL 
@@ -50,7 +49,6 @@ pb.ip=$internalip
 pb.port=$openport
 pb.password=$pass
 EOL
-fi
 
 #download mods and hmc and move them to the proper places
 	mkdir ~/.minecraft/mods -p
@@ -58,25 +56,21 @@ fi
 	wget https://github.com/3arthqu4ke/hmc-specifics/releases/download/v1.20.4-1.8.1/hmc-specifics-forge-1.20.4-1.8.1.jar && mv hmc-specifics-forge-1.20.4-1.8.1.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/HeadlessForge/releases/download/1.2.0/headlessforge-1.2.0.jar && mv headlessforge-1.2.0.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/headlessmc/releases/download/1.8.1/headlessmc-launcher-1.8.1.jar
-fi
 
 #download minecraft and forge
 	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command download 1.12.2
 	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command forge 1.12.2
-fi
 	$javadir/java -jar headlessmc-launcher-1.5.2.jar --command login $email $password
 
 
 #download playit.gg
 	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64 && chmod +x ./playit-linux-amd64
-fi
 
 #make launch file for pb server
 	touch launchpb && cat >>~/launchpb<<EOL
 $javadir/java -jar headlessmc-launcher-1.5.2.jar --command $@
 EOL
 chmod +x launchpb
-fi
 
 ./playit-linux-amd64
 
