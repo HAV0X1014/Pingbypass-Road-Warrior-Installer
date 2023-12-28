@@ -68,7 +68,7 @@ EOL
 
 #make launch file for pb server
 	touch launchpb && cat >>~/launchpb<<EOL
-$javadir/java -jar headlessmc-launcher-1.5.2.jar --command $@
+$javadir/java -jar headlessmc-launcher-1.8.1.jar --command $@
 EOL
 chmod +x launchpb
 
