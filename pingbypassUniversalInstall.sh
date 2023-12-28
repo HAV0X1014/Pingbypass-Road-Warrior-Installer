@@ -58,9 +58,9 @@ EOL
 	wget https://github.com/3arthqu4ke/headlessmc/releases/download/1.8.1/headlessmc-launcher-1.8.1.jar && mv headlessmc-launcher-1.8.1.jar launchpb.jar && chmod +x launchpb
 
 #download minecraft and forge
-	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command download 1.12.2
-	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command forge 1.12.2
-	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command login $email $password
+	$javadir/java -jar launchpb.jar --command download 1.12.2
+	$javadir/java -jar launchpb.jar --command forge 1.12.2
+	$javadir/java -jar launchpb.jar --command login $email $password
 
 
 #download playit.gg
