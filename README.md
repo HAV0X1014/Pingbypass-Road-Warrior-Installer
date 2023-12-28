@@ -17,8 +17,8 @@
 
 2. In terminal type
  ```
-cd ~
-sudo wget https://raw.githubusercontent.com/SoftWaren1/Pingbypass/main/pingbypassUniversalInstall.sh
+sudo curl -O https://raw.githubusercontent.com/SoftWaren1/Pingbypass/main/pingbypassUniversalInstall.sh
+sudo chmod +x pingbypassUniversalInstall.sh
 sudo bash pingbypassUniversalInstall.sh
 ```
 
