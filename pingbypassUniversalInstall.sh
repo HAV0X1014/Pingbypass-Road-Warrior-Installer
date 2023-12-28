@@ -53,7 +53,7 @@ EOL
 #download mods and hmc and move them to the proper places
 	mkdir ~/.minecraft/mods -p
 	wget https://github.com/SoftWaren1/Pingbypass-Client/releases/download/2.0.0/3arthh4ck-2.0.0.jar && mv 3arthh4ck-2.0.0.jar ~/.minecraft/mods
-	wget https://github.com/3arthqu4ke/hmc-specifics/releases/download/v1.20.4-1.8.1/hmc-specifics-forge-1.20.4-1.8.1.jar && mv hmc-specifics-forge-1.20.4-1.8.1.jar ~/.minecraft/mods
+	wget https://github.com/3arthqu4ke/hmc-specifics/releases/download/1.12.2-b4/HMC-Specifics-1.12.2-b4-full.jar && mv HMC-Specifics-1.12.2-b4-full.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/HeadlessForge/releases/download/1.2.0/headlessforge-1.2.0.jar && mv headlessforge-1.2.0.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/headlessmc/releases/download/1.8.1/headlessmc-launcher-1.8.1.jar && mv headlessmc-launcher-1.8.1.jar launchpb.jar && chmod +x launchpb
 
