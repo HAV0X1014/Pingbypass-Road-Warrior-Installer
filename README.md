@@ -25,8 +25,10 @@ cd ~ && sudo bash pingbypassUniversalInstall.sh
 3. Follow the prompts printed into the console and type your answers to each.
 
 4. Run ```./launchpb``` in a new terminal session, and use ```launch 1 -id``` to launch the Pingbypass server.
+   
+6. On playit.gg website after adding a new agent, create a new tunnel, on the game select ```Minecraft Java```, scroll down on the ip put ```10.88.0.3``` on the port put ```8080```
 
-5. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
+7. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
 
 ## Credits
 
