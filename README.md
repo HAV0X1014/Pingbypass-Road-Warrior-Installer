@@ -17,9 +17,9 @@
 
 2. In terminal type
  ```
-sudo curl -O https://raw.githubusercontent.com/SoftWaren1/Pingbypass/main/pingbypassUniversalInstall.sh
-sudo chmod +x pingbypassUniversalInstall.sh
-sudo bash pingbypassUniversalInstall.sh
+cd ~ && sudo curl -O https://raw.githubusercontent.com/SoftWaren1/Pingbypass/main/pingbypassUniversalInstall.sh
+cd ~ && sudo chmod +x pingbypassUniversalInstall.sh
+cd ~ && sudo bash pingbypassUniversalInstall.sh
 ```
 
 3. Follow the prompts printed into the console and type your answers to each.
