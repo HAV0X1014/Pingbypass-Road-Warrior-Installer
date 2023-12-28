@@ -15,17 +15,14 @@
 ## Usage
 1. Make sure `wget` is installed and usable.
 
-2. Download and move the `pingbypassUniversalInstall.sh` file to your VPS/VM's home directory (`~`). This script will not work elsewhere. Use `wget https://raw.githubusercontent.com/SoftWaren1/Pingbypass/main/pingbypassUniversalInstall.sh` to download the script directly to your VPS.
+2. In terminal type `wget https://raw.githubusercontent.com/SoftWaren1/Pingbypass/main/pingbypassUniversalInstall.sh
+   sudo bash pingbypassUniversalInstall.sh` to download the script directly to your VPS.
 
-3. Run `bash pingbypassUniversalInstall.sh`
+3. Follow the prompts printed into the console and type your answers to each.
 
-4. Follow the prompts printed into the console and type your answers to each.
+4. Run `./launchpb` in a new terminal session, and use `launch 1 -id` to launch the Pingbypass server.
 
-5. If it completes without errors, then run `./playit-linux-amd64` in a new terminal session, and follow the prompts given on the playit.gg website. A guide is printed in the console.
-
-6. Run `./launchpb` in a new terminal session, and use `launch 1 -id` to launch the Pingbypass server.
-
-7. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
+5. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
 
 ## Credits
 
