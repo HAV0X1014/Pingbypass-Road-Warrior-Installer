@@ -30,7 +30,7 @@ read -p $'Input the email of the Minecraft account you want on the server.\n' em
 read -p $'Input the password of the Minecraft account you want on the server.\n' password
 
 #install java
-	wget https://javadl.oracle.com/webapps/download/GetFile/1.8.0_321-b07/df5ad55fdd604472a86a45a217032c7d/linux-i586/jdk-8u321-linux-x64.tar.gz
+	wget https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-x64_bin.tar.gz
 	tar -xf jdk-8u321-linux-x64.tar.gz
 
 #make config files, directories and input relevant configs
