@@ -63,10 +63,10 @@ fi
 #download mods and hmc and move them to the proper places if not already downloaded
 if [ ! -d "$modsdir" ]; then
 	mkdir ~/.minecraft/mods -p
-	wget https://github.com/3arthh4ckDevelopment/3arthh4ck-Client/releases/download/1.8.8/3arthh4ck-1.8.8-release.jar && mv 3arthh4ck-1.8.8-release.jar ~/.minecraft/mods
-	wget https://github.com/3arthqu4ke/HMC-Specifics/releases/download/1.0.3/HMC-Specifics-1.12.2-b2-full.jar && mv HMC-Specifics-1.12.2-b2-full.jar ~/.minecraft/mods
+	wget https://github.com/SoftWaren1/Pingbypass-Client/releases/download/2.0.0/3arthh4ck-2.0.0.jar && mv 3arthh4ck-2.0.0.jar ~/.minecraft/mods
+	wget https://github.com/3arthqu4ke/hmc-specifics/releases/download/v1.20.4-1.8.1/hmc-specifics-forge-1.20.4-1.8.1.jar && mv hmc-specifics-forge-1.20.4-1.8.1.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/HeadlessForge/releases/download/1.2.0/headlessforge-1.2.0.jar && mv headlessforge-1.2.0.jar ~/.minecraft/mods
-	wget https://github.com/3arthqu4ke/HeadlessMc/releases/download/1.5.2/headlessmc-launcher-1.5.2.jar
+	wget https://github.com/3arthqu4ke/headlessmc/releases/download/1.8.1/headlessmc-launcher-1.8.1.jar
 fi
 
 #download minecraft and forge if not already done and login
@@ -89,6 +89,8 @@ $javadir/java -jar headlessmc-launcher-1.5.2.jar --command $@
 EOL
 chmod +x launchpb
 fi
+
+./playit-linux-amd64
 
 #tell user how to use playit.gg and how to launch server
 echo $"
