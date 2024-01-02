@@ -5,7 +5,7 @@ pacman -Syu wget
 
 #set some variables
 internalip=$( ip -o route get to 10.0.0.0 | sed -n 's/.*src \([0-9.]\+\).*/\1/p' )
-javadir=~/graalvm-jdk-21.0.1+12.1/bin
+javadir=~/jdk1.8.0_321/bin
 hmcdir=~/HeadlessMC
 modsdir=~/.minecraft/mods
 mcdir=~/.minecraft/versions/1.12.2
@@ -30,8 +30,8 @@ read -p $'Input the email of the Minecraft account you want on the server.\n' em
 read -p $'Input the password of the Minecraft account you want on the server.\n' password
 
 #install java
-	wget https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-x64_bin.tar.gz
-	tar -xf graalvm-jdk-21_linux-x64_bin.tar.gz
+	wget https://javadl.oracle.com/webapps/download/GetFile/1.8.0_321-b07/df5ad55fdd604472a86a45a217032c7d/linux-i586/jdk-8u321-linux-x64.tar.gz
+	tar -xf jdk-8u321-linux-x64.tar.gz
 
 #make config files, directories and input relevant configs
 	mkdir ~/HeadlessMC -p && touch ~/HeadlessMC/config.properties && cat >> ~/HeadlessMC/config.properties<<EOL 
