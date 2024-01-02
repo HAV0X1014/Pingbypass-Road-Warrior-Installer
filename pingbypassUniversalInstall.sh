@@ -13,7 +13,7 @@ playitcheck=~./playit-linux-amd64
 launch=~launchpb
 
 #credits
-echo $'brought to you by SoftWaren'
+echo $'brought to you by SoftWaren1/_Cr33pyL3mon4de and KillAura7170/OP_KillAura'
 echo $'Welcome to Pingbyppass Setup'
 echo $'Thanks to HAV0X1014, YongSheng109 and 3arthqu4ke.'
 
@@ -52,15 +52,15 @@ EOL
 
 #download mods and hmc and move them to the proper places
 	mkdir ~/.minecraft/mods -p
-	wget https://github.com/SoftWaren1/Pingbypass-Client/releases/download/2.0.0/3arthh4ck-2.0.0.jar && mv 3arthh4ck-2.0.0.jar ~/.minecraft/mods
-	wget https://github.com/3arthqu4ke/hmc-specifics/releases/download/v1.20.4-1.8.1/hmc-specifics-forge-1.20.4-1.8.1.jar && mv hmc-specifics-forge-1.20.4-1.8.1.jar ~/.minecraft/mods
+	wget https://github.com/3arthh4ckDevelopment/3arthh4ck-Client/releases/download/2.0.0/3arthh4ck-2.0.0-release.jar && mv 3arthh4ck-2.0.0-release.jar ~/.minecraft/mods
+	wget https://github.com/3arthqu4ke/hmc-specifics/releases/download/1.12.2-b4/HMC-Specifics-1.12.2-b4-full.jar && mv HMC-Specifics-1.12.2-b4-full.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/HeadlessForge/releases/download/1.2.0/headlessforge-1.2.0.jar && mv headlessforge-1.2.0.jar ~/.minecraft/mods
 	wget https://github.com/3arthqu4ke/headlessmc/releases/download/1.8.1/headlessmc-launcher-1.8.1.jar && mv headlessmc-launcher-1.8.1.jar launchpb.jar && chmod +x launchpb
 
 #download minecraft and forge
-	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command download 1.12.2
-	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command forge 1.12.2
-	$javadir/java -jar headlessmc-launcher-1.8.1.jar --command login $email $password
+	$javadir/java -jar launchpb.jar --command download 1.12.2
+	$javadir/java -jar launchpb.jar --command forge 1.12.2
+	$javadir/java -jar launchpb.jar --command login $email $password
 
 
 #download playit.gg
