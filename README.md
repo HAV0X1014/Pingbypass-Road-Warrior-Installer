@@ -32,7 +32,7 @@ cd ~ && bash pingbypassUniversalInstall.sh
 
 4. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
 
-### Incase of login error (due to 2fa or Unsual activity detected)
+### Incase of login error (due to 2FA or Unsual activity detected)
 
 https://account.live.com/activity
 
