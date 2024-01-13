@@ -21,9 +21,9 @@ Sandstar Pingbypass can be found at https://discord.gg/5HVsNJrVWM
 ## Usage
 1. In terminal paste
 ```
-cd ~ && sudo wget https://raw.githubusercontent.com/HAV0X1014/Pingbypass-Road-Warrior-Installer/main/pingbypassUniversalInstall.sh
-cd ~ && sudo chmod +x pingbypassUniversalInstall.sh
-cd ~ && sudo bash pingbypassUniversalInstall.sh
+cd ~ && curl -O https://raw.githubusercontent.com/SoftWaren1/Pingbypass-Improved/main/pingbypassUniversalInstall.sh
+cd ~ && chmod +x pingbypassUniversalInstall.sh
+cd ~ && bash pingbypassUniversalInstall.sh
 ```
 
 2. Follow the prompts printed into the console and type your answers to each.
