@@ -1,3 +1,8 @@
+#install wget
+sudo apt install wget
+yum install wget -y
+pacman -Syu wget
+
 #set some variables
 internalip=$( ip -o route get to 10.0.0.0 | sed -n 's/.*src \([0-9.]\+\).*/\1/p' ) #WHAT THE FUCK
 javadir=~/jdk1.8.0_321/bin
@@ -87,7 +92,7 @@ fi
 
 #download playit.gg if it hasnt been already
 if [ ! -d "$playitcheck" ]; then
-	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.9.3/playit-0.9.3 && chmod +x playit-0.9.3
+	wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.0/playit-linux-amd64 && chmod +x playit-linux-amd64
 fi
 
 #make launch file for pb server if it hasnt been made already
@@ -97,6 +102,8 @@ $javadir/java -jar headlessmc-launcher-1.5.2.jar --command $@
 EOL
 chmod +x launchpb
 fi
+
+./playit-linux-amd64
 
 #tell user how to use playit.gg and how to launch server
 echo $"
