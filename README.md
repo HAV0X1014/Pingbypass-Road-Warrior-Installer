@@ -32,6 +32,14 @@ cd ~ && bash pingbypassUniversalInstall.sh
 
 4. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
 
+### Incase of login error (due to 2fa or Unsual activity detected)
+
+https://account.live.com/activity
+
+https://account.microsoft.com/activity
+
+go in any of the above link and authorise login
+
 ## Credits
 zYongSheng_ - Making the inital guide to installing Pingbypass on NeverInstall and using Playit.gg to bypass port forwarding. This script is based on that idea.
 
