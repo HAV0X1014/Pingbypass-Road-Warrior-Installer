@@ -31,7 +31,7 @@ cd ~ && sudo bash pingbypassUniversalInstall.sh
 
 2. Follow the prompts printed into the console and type your answers to each.
 
-3. Run `./launchpb` in a new terminal session, and use `launch [forge install ID number] -id` (forge install ID number is usually 1, so you can directly type `launch 1 -id` to launch the Pingbypass server.
+3. Run `./launchpb` in a new terminal session, and use `launch [forge install ID number] -id` (forge install ID number is usually 1, so you can directly type `launch 1 -id`) to launch the Pingbypass server.
 
 4. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
 
