@@ -1,3 +1,19 @@
+# Pingbypass Installer
+
+## Free VPS List:
+
+### Requires Credit Card
+
+#### Amazon AWS Hosting (Free For 12 Months)
+#### Google Cloud (Free For 3 Months)
+
+### Does Not Require Credit Card
+
+#### Google Cloud Shell
+#### IBM Linux ONE
+
+
+
 # Pingbypass Road Warrior Installer
 A script to install and configure 3arthh4ck Pingbypass as quickly as possible on any Linux distro. This is largely a "[road warrior](https://www.merriam-webster.com/dictionary/road%20warrior)" style install, suitable for systems like NeverInstall or a loaned VPS as it does not need port forwarding, and makes use of large hacks unsuitable for a typical Pingbypass install.
 
@@ -6,19 +22,18 @@ The only dependency needed is wget, which should already be installed on most di
 Sandstar Pingbypass can be found at https://discord.gg/5HVsNJrVWM
 
 ## Usage
-1. Make sure `wget` is installed and usable.
+1. In terminal paste
+```
+cd ~ && sudo curl -O https://raw.githubusercontent.com/HAV0X1014/Pingbypass-Road-Warrior-Installer/main/pingbypassUniversalInstall.sh
+cd ~ && sudo chmod +x pingbypassUniversalInstall.sh
+cd ~ && sudo bash pingbypassUniversalInstall.sh
+```
 
-2. Download and move the `pingbypassUniversalInstall.sh` file to your VPS/VM's home directory (`~`). This script will not work elsewhere. Use `wget https://raw.githubusercontent.com/HAV0X1014/Pingbypass-Road-Warrior-Installer/main/pingbypassUniversalInstall.sh` to download the script directly to your VPS.
+2. Follow the prompts printed into the console and type your answers to each.
 
-3. Run `bash pingbypassUniversalInstall.sh`
+3. Run `./launchpb` in a new terminal session, and use `launch [forge install ID number] -id` (forge install ID number is usually 1, so you can directly type `launch 1 -id` to launch the Pingbypass server.
 
-4. Follow the prompts printed into the console and type your answers to each.
-
-5. If it completes without errors, then run `./playit-0.9.3` in a new terminal session, and follow the prompts given on the playit.gg website. A guide is printed in the console.
-
-6. Run `./launchpb` in a new terminal session, and use `launch [forge install ID number] -id` to launch the Pingbypass server.
-
-7. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
+4. Connect 3arthh4ck to the server using the address and port supplied by playit.gg. If the address with words is too long, the IPv4 address supplied may work.
 
 ## Credits
 zYongSheng_ - Making the inital guide to installing Pingbypass on NeverInstall and using Playit.gg to bypass port forwarding. This script is based on that idea.
