@@ -1,25 +1,22 @@
-# Pingbypass Installer
-
-## Free VPS List:
-
-### Requires Credit Card
-
-#### Amazon AWS Hosting (Free For 12 Months)
-#### Google Cloud (Free For 3 Months)
-
-### Does Not Require Credit Card
-
-#### Google Cloud Shell
-#### IBM Linux ONE
-#### Never Install
-
-
 # Pingbypass Road Warrior Installer
 A script to install and configure 3arthh4ck Pingbypass as quickly as possible on any Linux distro. This is largely a "[road warrior](https://www.merriam-webster.com/dictionary/road%20warrior)" style install, suitable for systems like NeverInstall or a loaned VPS as it does not need port forwarding, and makes use of large hacks unsuitable for a typical Pingbypass install.
 
 The only dependency needed is wget, which should already be installed on most distros/VPS images. You will need to be able to communicate on all ports, and have an unfiltered internet connection.
 
 Sandstar Pingbypass can be found at https://discord.gg/5HVsNJrVWM
+
+## Free VPS List:
+
+### Requires Credit Card
+
+#### Amazon AWS Hosting (Free For 12 Months): https://aws.amazon.com/
+#### Google Cloud (Free For 3 Months): https://cloud.google.com/
+
+### Does Not Require Credit Card
+
+#### Google Cloud Shell: https://shell.cloud.google.com/
+#### IBM Linux ONE: https://linuxone.cloud.marist.edu/
+#### Never Install: https://neverinstall.com/
 
 ## Usage
 1. In terminal paste
