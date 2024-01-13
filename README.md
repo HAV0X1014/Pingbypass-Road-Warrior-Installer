@@ -11,12 +11,19 @@ Sandstar Pingbypass can be found at https://discord.gg/5HVsNJrVWM
 
 #### Amazon AWS Hosting (Free For 12 Months): https://aws.amazon.com/
 #### Google Cloud (Free For 3 Months): https://cloud.google.com/
+#### Vultr (Free For 1 Month): https://www.vultr.com/
+#### Microsoft Azure (Free For 1 Month): https://azure.microsoft.com/
 
 ### Does Not Require Credit Card
 
 #### Google Cloud Shell: https://shell.cloud.google.com/
 #### IBM Linux ONE: https://linuxone.cloud.marist.edu/
 #### Never Install: https://neverinstall.com/
+#### Gitpod: https://www.gitpod.io/
+#### Replit: https://replit.com/
+#### AppOnFly: https://app.apponfly.com/trial
+#### Glitch: https://glitch.com/
+#### Google Colaboratory: https://colab.research.google.com/
 
 ## Usage
 1. In terminal paste
